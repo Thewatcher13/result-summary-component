@@ -1,0 +1,262 @@
+/*MY CSS RESET*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li{
+  margin:0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*VARIABLES*/
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  
+  
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  
+}
+
+
+
+.wrapper {
+  min-width: 23.4573rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.column__1{
+color:white;
+text-align: center;
+background-image: linear-gradient(#2f2ce9ec, #7755ff) ;
+border-radius: 0 0 2rem 2rem;
+padding:1.5rem 3.625rem 2.5rem 3.625rem;
+}
+
+.title {
+  color: #CAC9FF;
+  font-size:1.125rem;
+  font-weight: 500;
+  margin-block-end: 1.5rem;
+}
+
+.blue__circle {
+  margin:0 auto;
+  border-radius: 50%;
+  max-width:8.75rem;
+  max-height:8.75rem;
+  background-image: linear-gradient(#4e21c96c, #2421c900);
+  font-weight: 800;
+  padding:1.4375rem 2.375rem;
+}
+
+.main__score {
+font-size:3.5rem;
+}
+
+.total__score {
+  color:#CAC9FF;
+}
+
+.congratulations{
+  margin-block-start: 1.5rem;
+  font-size:0.875rem;
+  
+}
+
+.explanation__score {
+  margin-block-start: 0.5rem;
+  color:#CAC9FF;
+}
+.column__2{
+  padding:0 1.875rem;
+}
+
+.summary {
+  font-size: 1.125rem;
+  margin-block-start:1.5rem ;
+  margin-block-end: 1.5rem;
+}
+
+.list__item{
+  display: flex;
+  max-width: 19.6875rem;
+  max-height: 3.5rem;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem ;
+  margin-block-end: 1rem;
+}
+
+.red_reaction {
+color: var(--Light-red);
+ margin-inline-start: 0.75rem;
+ margin-inline-end: auto;
+}
+
+.gold__memory{
+  color: var(--Orangey-yellow);
+  margin-inline-start: 0.75rem;
+ margin-inline-end: auto;
+
+
+}
+.green__verbal{
+  color: var(--Green-teal);
+  margin-inline-start: 0.75rem;
+  margin-inline-end: auto;
+}
+
+.blue__visual{
+  color: var(--Cobalt-blue);
+  margin-inline-start: 0.75rem;
+  margin-inline-end: auto;
+}
+
+.background_red {
+background-color:   hsla(0, 100%, 67%, 0.116);
+}
+
+.background_gold {
+  background-color:  hsla(39, 100%, 56%, 0.164);
+}
+
+.background_green {
+  background-color: hsla(166, 100%, 37%, 0.062);
+}
+
+.background_blue {
+  background-color: hsla(234, 85%, 45%, 0.062);
+}
+
+.summary_result {
+  font-weight: bold;
+  color:var(--Dark-gray-blue)
+}
+.summary_max_total {
+  color:hsla(224, 30%, 27%, 0.473)
+}
+
+.continue_btn {
+  min-width: 19.6875rem;
+  min-height: 3.5rem;
+  background-color: var(--Dark-gray-blue);
+  padding:1rem 0;
+  border-radius: 8rem;
+  color:var(--White);
+  border: none;
+}
+
+@media  screen and (min-width:64rem) {
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    max-width: 46rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+  }
+
+
+  .column__1 {
+    border-radius: 2rem;
+  }
+
+
+
+
+
+}
